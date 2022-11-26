@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="logo.jpg">
+    <link rel="shortcut icon" href="images/logo.jpg">
     <title>Kovkuto Nikita</title>
 </head>
 
@@ -21,9 +21,10 @@
     <nav class="nav" aria-label="navigation">
         <div class="nav__inner">
             <ul class="nav__menu">
-                <li class="nav__item"><a href="#"><img class="nav__img" src="logo.jpg" alt=""></a></li>
-                <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Contacts</a></li>
+                <li class="nav__item" id="nav__item-1"><a href="#"><img class="nav__img" src="images/logo.jpg"
+                            alt=""></a></li>
+                <li class="nav__item" id="nav__item-2"><a class="nav__link" href="#skills">Skills</a></li>
+                <li class="nav__item" id="nav__item-3"><a class="nav__link" href="#contacts">Contacts</a></li>
             </ul>
         </div>
     </nav>
@@ -38,44 +39,67 @@
                 <div class="header__inner">
                     <h1 class="header__title title">
                         <span class="title__primary-text">Kovkuto Nikita: </span>
-                        <span>Front-End Developer </span>
-                        <span>UI/UX Designer</span>
+                        <span>Front-End Developer; </span>
+                        <span>UI/UX Designer;</span>
                     </h1>
                 </div>
             </div>
         </header>
-        <section class="section skills" aria-label="skills" id="skills">
-            <div class="skills__bg"></div>
-            <div class="container">
-                <div class="skills__inner">
-                    <h1 class="skills__title title"><span class="title__primary-text">Skills:</span></h1>
-                    <div class="skills__text title">
-                        <span>Animations</span>
-                        <span>Responsive Design</span>
-                        <span>SCSS/Sass</span>
-                        <span>Gulp</span>
-                    </div>
-                    <div class="skills__key">
-                        Press Enter To Continue
-                        <img class="skills__key-img" src="enter-btn.svg" alt="">
-                    </div>
-                    <div class="skills__loading">
-                        <span class="skills__loading-percentage">100%</span>
-                        <span class="skills__loading-bar"></span>
+        <div class="space">
+            <div class="space__bg"></div>
+            <section class="section skills" aria-label="skills" id="skills">
+                <div class="container">
+                    <div class="skills__inner">
+                        <h1 class="skills__title title"><span class="title__primary-text">Skills:</span></h1>
+                        <div class="skills__text-content">
+                            <div class="skills__text title">
+                                <span>Animations;</span>
+                                <span>Responsive Design;</span>
+                                <span>SCSS/Sass;</span>
+                                <span>Gulp;</span>
+                            </div>
+                            <div class="skills__logs"></div>
+                        </div>
+                        <div class="skills__key">
+                            Press Button To Continue
+                        </div>
+                        <div class="skills__loading">
+                            <span class="skills__loading-percentage">100%</span>
+                            <span class="skills__loading-bar"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-    <section class="section contacts" style="background-color: #000;">
-        <div class="container">
-            <div class="contacts__inner">
-                <h1 class="contacts__title title"><span>Contacts</span></h1>
-            </div>
+            </section>
+            <section class="section contacts" id="contacts">
+                <div class="container">
+                    <div class="contacts__inner">
+                        <h1 class="contacts__title title"><span>Contacts:</span></h1>
+                        <div class="contacts__content">
+                            <form class="contacts__form">
+                                <div class="contacts__input-line">
+                                    <input type="text" class="contacts__input" placeholder="Name">
+                                    <input type="email" class="contacts__input" placeholder="Email">
+                                </div>
+                                <textarea name="" placeholder="Message..." id="" cols="30" rows="10"
+                                    class="contacts__textarea"></textarea>
+                                <button class="contacts__btn">Send</button>
+                            </form>
+                            <div class="contacts__social">
+                                <a href="https://t.me/kovkuto"><img src="images/telegram-icon.svg" alt=""
+                                        class="contacts__social-icon"></a>
+                                <a href="https://wa.me/79300616105"><img src="images/whatsapp-icon.svg" alt=""
+                                        class="contacts__social-icon"></a>
+                                <!-- <a href="viber://chat?number=%2B79300616105"><img src="images/viber-icon.svg" alt=""
+                                        class="contacts__social-icon"></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
 
-    <script src="main.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
